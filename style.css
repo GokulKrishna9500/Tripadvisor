@@ -4,49 +4,70 @@
 }
 
 body{
-    padding: 15px 40px;
     font-family: "Roboto", sans-serif;
 }
 
 .header{
+    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.header__title{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
     align-items: center;
 }
 
 .header__title img{
-    width: 150px;
+    width: 200px;   
 }
 
 .header__navbar{
     display: flex;
+    justify-content: center;
     gap: 30px;
-
+    flex-grow: 2;
+    font-weight: bold;
 }
 
 .header__menu{
     display: flex;
+    justify-content: right;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
 }
 
 .header__menu input{
     background-color: black;
     color: white;
-    border-radius: 20px;
-    font-size: 15px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
     border-style: none;
-    padding: 10px;
+    padding: 15px 20px;
 }
 
 .main .subheader{
     margin-top: 40px;
     text-align: center;
     font-size: 30px;
+
 }
 
 .categories{
     display: flex;
+    padding: 15px 40px;
     gap: 20px;
     justify-content: center;
     margin-top: 30px;
@@ -55,9 +76,15 @@ body{
 
 .searchbar{
     display: flex;
+    padding: 15px 40px;
     margin-top: 40px;
     justify-content: center;
     align-items: center;
+   position: sticky; 
+   top: 70px;
+   background-color: white;
+   z-index: 1;
+    
 }
 
 .searchbar__search{
@@ -65,7 +92,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     gap: 5px;
-    width: 65%;
+    flex-basis: 70%;
     padding: 5px;
     border: solid #E0E0E0 1px;
     border-radius: 40px;
@@ -85,12 +112,13 @@ body{
     padding: 15px;
     border-radius: 30px;
     border: none;
-    width: 13%;
+    flex-basis: 13%;
     font-size: 18px;   
 }
 
 .body__img{
     margin-top: 70px;
+    padding: 15px 40px;
 }
 
 .body__img img{
@@ -99,6 +127,7 @@ body{
 
 .staysomewhere{
     margin-top: 60px;
+    padding: 15px 40px;
 }
 
 .staysomewhere p, .staysomewhere h2{
@@ -107,18 +136,20 @@ body{
 
 .staysomewhere__container{
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
 .cards{
-    width: 25%;
-    height: 300px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    /* height: 300px; */
     position: relative;
 }
 
 .cards img{
     width: 100%;
-    height: 300px;
+    /* height: 100%; */
     border-radius: 10px;
 }
 
@@ -141,6 +172,7 @@ body{
 
 .wayto{
     margin-top: 60px; 
+    padding: 15px 40px;
 }
 
 .wayto p, .wayto h2{
@@ -149,18 +181,20 @@ body{
 
 .wayto__container{
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
 .wayto__cards{
-    width: 25%;
+    flex-grow: 1;
+    flex-basis: 20%;
     position: relative;
 }
 
 .wayto__cards img{
     width: 100%;
-    height: 300px;
     border-radius: 10px;
+    position: relative;
 }
 
 .wayto__cards p{
@@ -169,9 +203,9 @@ body{
 }
 
 .wayto__cards i{
-    position: absolute;
-    top: 30px;
-    right: 18px;
+   position: absolute;
+   top: 25px;
+   right: 20px;
 }
 
 .wayto__cards h1{
@@ -186,6 +220,7 @@ body{
 
 .topexperience{
     margin-top: 60px; 
+    padding: 15px 40px;
 }
 
 .topexperience p, .topexperience h2{
@@ -194,17 +229,18 @@ body{
 
 .topexperience__container{
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
 .topexperience__cards{
-    width: 25%;
+    flex-grow: 1;
+    flex-basis: 20%;
     position: relative;
 }
 
 .topexperience__cards img{
     width: 100%;
-    height: 300px;
     border-radius: 10px;
 }
 
@@ -213,15 +249,15 @@ body{
     font-weight: bolder;
 }
 
-.topexperience__cards i{
+.topexperience i{
     position: absolute;
-    top: 30px;
-    right: 18px;
-}
+    top: 25px;
+    right: 20px;
+ }
 
 .topexperience__cards h1{
     height: 40px;
-    width: 40px;
+    width: 100%;
     background-color: white;
     border-radius: 25px;
     position: absolute;
@@ -231,6 +267,7 @@ body{
 
 .hotspots{
     margin-top: 60px; 
+    padding: 15px 40px;
 }
 
 .hotspots p, .hotspots h2{
@@ -239,17 +276,18 @@ body{
 
 .hotspots__container{
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
 .hotspots__cards{
-    width: 25%;
+    flex-grow: 1;
+    flex-basis: 20%;
     position: relative;
 }
 
 .hotspots__cards img{
     width: 100%;
-    height: 300px;
     border-radius: 10px;
 }
 
@@ -278,6 +316,7 @@ body{
     margin-top: 60px;
     padding-bottom: 60px;
     background-color: #FAF1ED;
+    padding: 15px 40px;
 }
 
 .moretoexplore h2{
@@ -287,17 +326,18 @@ body{
 
 .moretoexplore__container{
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
 .moretoexplore__cards{
-    width: 35%;
+    flex-grow: 1;
+    flex-basis: 20%;
     position: relative;
 }
 
 .moretoexplore__cards img{
     width: 100%;
-    height: 250px;
     border-radius: 10px;
 }
 
@@ -327,6 +367,7 @@ body{
 
 .topdestination{
     margin-top: 60px;
+    padding: 15px 40px;
 }
 
 .topdestination p, .topdestination h2{
@@ -335,18 +376,19 @@ body{
 
 .topdestination__container{
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
 .topdestination__cards{
-    width: 25%;
-    height: 300px;
+    flex-grow: 1;
+    flex-basis: 20%;
     position: relative;
 }
 
 .topdestination__cards img{
     width: 100%;
-    height: 300px;
+    /* height: 300px; */
     border-radius: 10px;
 }
 
@@ -369,6 +411,8 @@ body{
 
 .poster{
     margin-top: 70px;
+    position: relative;
+
 }
 
 .poster img{
@@ -379,6 +423,8 @@ body{
     background-color: #FAF1ED;
     margin-top: 60px;
     padding-bottom: 50px;
+    padding: 15px 40px;
+    position: relative;
 }
 
 .explore{
@@ -413,10 +459,11 @@ body{
 
 .privacy{
    width: 45%; 
+   font-size: 13px;
 }
 
 .privacy p{
-    font-size: 13px;
+    /* font-size: 13px; */
     padding-bottom: 10px;
 }
 
@@ -446,12 +493,13 @@ body{
 .contactus{
     display: flex;
     padding-top: 15px;
+    font-size: 13px;
     
 }
 
 .contactus__version{
     width: 60%;
-    font-size: 13px;
+    /* font-size: 13px; */
 }
 
 .contactus__contact{
@@ -459,6 +507,58 @@ body{
     flex-grow: 1;
     gap: 30px;
     justify-content: right;
+}
+
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+    .header__navbar{
+        display: none;
+    }
+
+    .header__menu{
+        font-size: medium;
+    }
+
+    .categories{
+        font-size: small;
+    }
+
+    .contactus, .terms, .privacy, .privacy a, .region select{
+        font-size: 10px;
+    }
+
+    .main .subheader{
+        font-size: 16px;
+    }
+
+    .searchbar__search input, .searchbar__search button{
+        height: 50%;
+        font-size: small;
+    }
+
+    
+}
+
+@media screen and (max-width:600px) {
+    .wayto__cards, .cards, .topexperience__cards, .hotspots__cards, .topdestination__cards {
+        flex-basis: 40%;
+    }
+
+    .moretoexplore__cards{
+        flex-basis: 50%;
+    }
+
+    .topexperience__cards i{
+        flex-basis: 10%;
+    }
+
+    .cards__shade{
+        height: 60px;
+    }
+
+    
 }
 
 
